@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-d_ml-&f=jvp8xd0b^!93$pt*_x%%lydw%782-mqcgzcythj()!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "192.168.7.108", "127.0.0.1"]
 
 
 # Application definition
@@ -129,3 +129,5 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
